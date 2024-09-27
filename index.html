@@ -1,0 +1,58 @@
+<html lang="en-uk">
+    <head>
+        <script src="index.js" "data.js" "functions.js" type="module"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <img src="./images/header.png" id="banner-img">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <div id="menu-display"></div>
+            <div id="your-order-header"></div>
+            <div id="ordered-items-display"></div>
+            <div id="total-price-display"></div>
+            <div id="complete-order-button"></div>
+            <div id="thankyou-message"></div>
+        </main>
+        <!-- POP-UP FOR PAYMENT DETAILS -->
+        <div class="modal" id="modal">
+            <div class="modal-inner" id="modal-inner">
+                <form id="payment-details-form">
+                    <h2 id="modal-header">Enter card details</h2>
+                    <input 
+                        type="text" 
+                        id="cardholder-name" 
+                        name="cardholder-name"
+                        placeholder="Enter your name"
+                        required >
+                    <input 
+                        type="number" 
+                        id="card-number" 
+                        name="card-number"
+                        placeholder="Enter card number"
+                        required >
+                    <input 
+                        type="number" 
+                        id="cvv" 
+                        name="cvv"
+                        placeholder="Enter CVV"
+                        required >
+                    <button type="submit" id="pay-btn">Pay</button>
+                </form>
+        </div>
+        <!-- end of pop-up section -->
+        <script src="functions.js" type="module"></script>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
+<!-- Banner at the top of the page with the name of the diner on it -->
+<!-- The html needs to display the items in the menu listed in the menuArray in the data.js file. The display of items needs to have a clickable plus button next to each menu item -->
+<!-- Once you have clicked one or more items, an ordering dialogue needs to display at the bottom of the page listing the items and prices and total, with a clickable button underneath saying "complete your order" -->
+<!-- Once you click the "complete your order" button it should take you to a pop-up dialogue for payment details inc name, card number, CVV - all of these are required. It should not allow you to submit without completing these -->
+<!-- Once this submits the pop-up should close and a message appear at the bottom where the ordering dialogue was saying "Thanks ${name}! Your order is on its way" -->

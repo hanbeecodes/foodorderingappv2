@@ -1,0 +1,257 @@
+head{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 600px;
+    max-height: 167px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    font-family: smythe;
+}
+
+/* hr{
+    color: #8B8B8B;
+} */
+
+input{
+     margin-bottom: 20px;
+     /* padding: 20px; */
+     width: 475.91px;
+     height: 71.3px;
+     padding-left: 10px;;
+}
+
+/* class section*/
+
+.complete-order-button{
+    width: 508px;
+    height: 60px;
+
+}
+
+.item-emoji{
+    font-size: 78.72px;
+    margin: 10px;
+}
+
+.item-name{
+    font-family: smythe;
+    font-size: 28px;
+}
+
+.ingredients-list{
+    color: #8B8B8B;
+    font-family: smythe;
+    font-size: 16px;
+}
+
+.item-price{
+    font-family: smythe;
+    font-size: 20px;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.flexbox1{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 20px 0;
+    width: 504px;
+}
+
+.modal{
+    display: none;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    height: 542px;
+    width: 524px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: white;
+    color: whitesmoke;
+}
+
+.modal-inner{
+    /* padding: 30px 24px; */
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    /* not convinced that the below code is doing anything?! */
+    display: flex;
+    flex-direction: column;
+}
+
+.order-item-button {
+    align-self: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-color: #DEDEDE;
+    border-style: solid;
+}
+
+.ordered-item-price-display{
+    font-family: smythe;
+    font-size: 20px;
+}
+
+.ordered-item-name-display{
+    font-family: smythe;
+    font-size: 28px;
+}
+
+.remove-item-btn{
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: #8B8B8B;
+    font-size: 12px;
+}
+
+.separating-line{
+    width: 504px;
+    border: 0;
+    border-top: 2px solid #D2D2D2;
+    height: 0px;
+}
+
+.smythe-regular {
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ID section */
+
+#banner-img{
+    width: 100%;
+    height: auto;
+}
+
+#border-before-total-price{
+    width: 504px;
+    border: 0;
+    border-top: 2px solid #393333;
+    height: 0px;
+    margin-top: 27px;
+    margin-bottom: 13px;;
+}
+
+#complete-order-styling{
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    padding: 20px 50px;
+    max-width: 508px;
+    width: 508px;
+    height: 60px;
+    margin: auto 50px 50px 50px;
+}
+
+#items-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu-display{
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#modal-header{
+    color: black;
+    font: verdana;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#ordered-items-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font: Smythe-regular;
+    width: 504px;
+    margin: auto;
+}
+
+#pay-btn{
+    background-color: #16DB99;
+    border: none;
+    color: white;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+#payment-details{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+#payment-details-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#price-display-right{
+    font-size: 20px;
+}
+
+#thankyou-message{
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: row;
+    background-color: #ECFDF5;
+    color: #065F46;
+    height: 120px;
+    width: 504px;
+    padding: auto;
+    padding-top: 60px;
+    margin: 45px 45px 250px 45px;
+    border: none;
+    font-size: 28px;
+}
+
+#total-price-display-inner{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 51px;
+    margin: auto;
+    justify-content: space-between;    
+    width: 508px;
+    font-family: smythe;
+    font-size: 28px;
+}
+
+#your-order-header{
+    text-align: center;
+    font-size: 28px;
+    
+}
